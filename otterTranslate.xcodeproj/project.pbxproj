@@ -10,9 +10,22 @@
 		45B0D9502FD2B7FD00260DC5 /* otterTranslate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = otterTranslate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		45B0D9942FD2BBAB00260DC5 /* Exceptions for "otterTranslate" folder in "otterTranslate" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				OtterKeyboard/Core/KeyboardViewController.swift,
+			);
+			target = 45B0D94F2FD2B7FD00260DC5 /* otterTranslate */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		45B0D9522FD2B7FD00260DC5 /* otterTranslate */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				45B0D9942FD2BBAB00260DC5 /* Exceptions for "otterTranslate" folder in "otterTranslate" target */,
+			);
 			path = otterTranslate;
 			sourceTree = "<group>";
 		};
