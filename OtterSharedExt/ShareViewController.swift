@@ -72,10 +72,38 @@ final class ShareViewController: UIViewController {
     }
 
     private func loadPlainText(from provider: NSItemProvider) async -> String? {
+        if let value = await loadStringObject(from: provider), value.isEmpty == false {
+            return value
+        }
+
+        if let value = await loadPlainTextItem(from: provider), value.isEmpty == false {
+            return value
+        }
+
+        if let value = await loadPlainTextData(from: provider), value.isEmpty == false {
+            return value
+        }
+
+        return nil
+    }
+
+    private func loadStringObject(from provider: NSItemProvider) async -> String? {
+        await withCheckedContinuation { continuation in
+            provider.loadObject(ofClass: NSString.self) { object, _ in
+                guard let string = object as? String else {
+                    continuation.resume(returning: nil)
+                    return
+                }
+                continuation.resume(returning: string.trimmingCharacters(in: .whitespacesAndNewlines))
+            }
+        }
+    }
+
+    private func loadPlainTextItem(from provider: NSItemProvider) async -> String? {
         await withCheckedContinuation { continuation in
             provider.loadItem(forTypeIdentifier: UTType.plainText.identifier, options: nil) { item, _ in
-                if let text = item as? String {
-                    continuation.resume(returning: text.trimmingCharacters(in: .whitespacesAndNewlines))
+                if let string = item as? String {
+                    continuation.resume(returning: string.trimmingCharacters(in: .whitespacesAndNewlines))
                     return
                 }
 
@@ -86,7 +114,26 @@ final class ShareViewController: UIViewController {
                     return
                 }
 
+                if let data = item as? Data,
+                   let text = String(data: data, encoding: .utf8) {
+                    continuation.resume(returning: text.trimmingCharacters(in: .whitespacesAndNewlines))
+                    return
+                }
+
                 continuation.resume(returning: nil)
+            }
+        }
+    }
+
+    private func loadPlainTextData(from provider: NSItemProvider) async -> String? {
+        await withCheckedContinuation { continuation in
+            provider.loadDataRepresentation(forTypeIdentifier: UTType.plainText.identifier) { data, _ in
+                guard let data,
+                      let text = String(data: data, encoding: .utf8) else {
+                    continuation.resume(returning: nil)
+                    return
+                }
+                continuation.resume(returning: text.trimmingCharacters(in: .whitespacesAndNewlines))
             }
         }
     }
