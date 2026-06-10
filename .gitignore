@@ -6,6 +6,8 @@
 *.xcworkspace/xcuserdata/
 *.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
 *.pbxproj
+.xcodeproj/
+.xcodeproj/project.xcworkspace/contents.xcworkspacedata
 
 # Build artifacts and local caches
 DerivedData/
