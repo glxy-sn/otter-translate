@@ -86,7 +86,7 @@ struct KeyboardSetupView: View {
         HStack {
             Spacer()
             
-            Image("OtterKeyboard")
+            Image("otterKeyboard")
                 .resizable()
                 .scaledToFit()
                 .frame(width: layout.width * 0.58)
