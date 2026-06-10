@@ -5,6 +5,7 @@
 # Xcode workspace and user state
 *.xcworkspace/xcuserdata/
 *.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+*.pbxproj
 
 # Build artifacts and local caches
 DerivedData/
