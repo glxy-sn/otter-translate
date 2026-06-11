@@ -20,7 +20,7 @@ final class DictionaryViewModel: ObservableObject {
     )
     
     let alphabet: [String] = Constants.Alphabet.letters
-    let entries: [JargonEntry] = JargonEntry.mockList
+    @Published private(set) var entries: [JargonEntry] = []
     
     var filteredEntries: [JargonEntry] {
         let sortedEntries = entries.sorted {
@@ -36,11 +36,14 @@ final class DictionaryViewModel: ObservableObject {
         return sortedEntries.filter {
             $0.term.localizedCaseInsensitiveContains(query) ||
             $0.definition.localizedCaseInsensitiveContains(query) ||
-            $0.example.localizedCaseInsensitiveContains(query)
+            $0.cleanExample.localizedCaseInsensitiveContains(query) ||
+            $0.translatedText.localizedCaseInsensitiveContains(query)
         }
     }
     
     init() {
+        entries = Self.loadEntriesFromJSON()
+
         let sortedEntries = entries.sorted {
             $0.term.localizedCaseInsensitiveCompare($1.term) == .orderedAscending
         }
@@ -91,5 +94,62 @@ final class DictionaryViewModel: ObservableObject {
     
     func onSetupTapped() {
         print("setup tapped")
+    }
+
+    private static func loadEntriesFromJSON() -> [JargonEntry] {
+        guard let data = loadDictionaryData(),
+              let rawItems = try? JSONDecoder().decode([DictionaryItemDTO].self, from: data) else {
+            return JargonEntry.mockList
+        }
+
+        let mapped = rawItems.compactMap { item -> JargonEntry? in
+            let term = item.term.trimmingCharacters(in: .whitespacesAndNewlines)
+            let definition = item.definition.trimmingCharacters(in: .whitespacesAndNewlines)
+            let cleanExample = item.definition2.trimmingCharacters(in: .whitespacesAndNewlines)
+            let translatedText = item.example.trimmingCharacters(in: .whitespacesAndNewlines)
+
+            guard term.isEmpty == false, definition.isEmpty == false else {
+                return nil
+            }
+
+            return JargonEntry(
+                term: term,
+                definition: definition,
+                indirectExample: cleanExample,
+                translatedText: translatedText
+            )
+        }
+
+        return mapped.isEmpty ? JargonEntry.mockList : mapped
+    }
+
+    private static func loadDictionaryData() -> Data? {
+        let bundle = Bundle.main
+
+        if let url = bundle.url(forResource: "dict_json", withExtension: "json", subdirectory: "Data"),
+           let data = try? Data(contentsOf: url) {
+            return data
+        }
+
+        if let url = bundle.url(forResource: "dict_json", withExtension: "json"),
+           let data = try? Data(contentsOf: url) {
+            return data
+        }
+
+        return nil
+    }
+}
+
+private struct DictionaryItemDTO: Decodable {
+    let term: String
+    let definition: String
+    let definition2: String
+    let example: String
+
+    enum CodingKeys: String, CodingKey {
+        case term
+        case definition
+        case definition2 = "definition_2"
+        case example
     }
 }

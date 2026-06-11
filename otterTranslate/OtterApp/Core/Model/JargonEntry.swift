@@ -12,18 +12,36 @@ struct JargonEntry: Identifiable, Hashable {
     let id: UUID
     let term: String
     let definition: String
-    let example: String
+    let indirectExample: String
+    let translatedText: String
     
+    init(
+        id: UUID = UUID(),
+        term: String,
+        definition: String,
+        indirectExample: String,
+        translatedText: String
+    ) {
+        self.id = id
+        self.term = term
+        self.definition = definition
+        self.indirectExample = indirectExample
+        self.translatedText = translatedText
+    }
+
     init(
         id: UUID = UUID(),
         term: String,
         definition: String,
         example: String
     ) {
-        self.id         = id
-        self.term       = term
-        self.definition = definition
-        self.example    = example
+        self.init(
+            id: id,
+            term: term,
+            definition: definition,
+            indirectExample: example,
+            translatedText: example
+        )
     }
     
     var firstLetter: String {
@@ -32,7 +50,7 @@ struct JargonEntry: Identifiable, Hashable {
     }
     
     var cleanExample: String {
-        example
+        indirectExample
             .trimmingCharacters(in: .whitespaces)
             .trimmingCharacters(in: CharacterSet(charactersIn: "\""))
     }

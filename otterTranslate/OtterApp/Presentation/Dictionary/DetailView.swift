@@ -71,7 +71,7 @@ struct DictionaryDetailView: View {
                     
                     // MARK: CorpKey Translation Box
                     CorpKeyTranslationBox(
-                        translatedText: "Let's use what we already have so we don't have to spend more."
+                        translatedText: entry.translatedText
                     )
                     .padding(.horizontal, layout.horizontalPadding)
                     .padding(.bottom, layout.spacingXXL)
