@@ -6,17 +6,6 @@
 import Foundation
 import Combine
 
-struct ShareTermDetail: Equatable, Identifiable {
-    let id: String
-    let match: ExactMatchResult
-    let dictionaryEntry: JargonDictionaryEntry?
-}
-
-struct ShareEntry: Equatable {
-    let inputText: String
-    let termDetails: [ShareTermDetail]
-}
-
 @MainActor
 final class ShareViewModel: ObservableObject {
     @Published private(set) var entry: ShareEntry?

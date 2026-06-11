@@ -13,7 +13,7 @@ struct ShareView: View {
 
     var body: some View {
         GeometryReader { geo in
-            let layout = ExtLayout(width: geo.size.width, height: geo.size.height)
+            let layout = LayoutConstants(width: geo.size.width, height: geo.size.height)
             ZStack {
                 Color.primaryBlueExt.ignoresSafeArea()
 
@@ -65,7 +65,7 @@ struct ShareView: View {
     private func termPageIndicator(
         currentIndex: Int,
         totalCount: Int,
-        layout: ExtLayout
+        layout: LayoutConstants
     ) -> some View {
         VStack(spacing: layout.spacingSmall) {
             Text("\(currentIndex + 1) of \(totalCount)")
@@ -84,7 +84,7 @@ struct ShareView: View {
         .frame(maxWidth: .infinity)
     }
 
-    private func termDetailPage(detail: ShareTermDetail, layout: ExtLayout) -> some View {
+    private func termDetailPage(detail: ShareTermDetail, layout: LayoutConstants) -> some View {
         ScrollView(showsIndicators: false) {
             VStack(alignment: .leading, spacing: 0) {
                 Text(detail.match.canonicalTerm.lowercased())
@@ -131,14 +131,14 @@ struct ShareView: View {
         }
     }
 
-    private func divider(layout: ExtLayout) -> some View {
+    private func divider(layout: LayoutConstants) -> some View {
         Rectangle()
             .fill(.white.opacity(0.2))
             .frame(height: 0.5)
             .padding(.horizontal, layout.horizontalPadding)
     }
 
-    private func section(title: String, content: String, layout: ExtLayout) -> some View {
+    private func section(title: String, content: String, layout: LayoutConstants) -> some View {
         VStack(alignment: .leading, spacing: layout.spacingSmall) {
             Text(title)
                 .font(.system(size: layout.fontXS, weight: .semibold))
@@ -152,7 +152,7 @@ struct ShareView: View {
         .padding(.horizontal, layout.horizontalPadding)
     }
 
-    private func corpKeyTranslationBox(translatedText: String, layout: ExtLayout) -> some View {
+    private func corpKeyTranslationBox(translatedText: String, layout: LayoutConstants) -> some View {
         VStack(alignment: .leading, spacing: layout.spacingSmall) {
             HStack(spacing: layout.spacingSmall) {
                 Image("otterKeyboard")
@@ -180,33 +180,6 @@ struct ShareView: View {
                 .stroke(Color.primaryBlueExt.opacity(0.15), lineWidth: 0.5)
         )
     }
-}
-
-private struct ExtLayout {
-    let width: CGFloat
-    let height: CGFloat
-
-    private var safeWidth: CGFloat { max(width, 1) }
-
-    var horizontalPadding: CGFloat { safeWidth * 0.05 }
-    var cardPadding: CGFloat { safeWidth * 0.04 }
-    var cornerRadiusLarge: CGFloat { safeWidth * 0.04 }
-    var iconSize: CGFloat { safeWidth * 0.06 }
-
-    var fontXS: CGFloat { safeWidth * 0.028 }
-    var fontSmall: CGFloat { safeWidth * 0.033 }
-    var fontBody: CGFloat { safeWidth * 0.038 }
-    var fontTitle: CGFloat { safeWidth * 0.055 }
-    var fontHero: CGFloat { safeWidth * 0.11 }
-
-    var spacingSmall: CGFloat { safeWidth * 0.03 }
-    var spacingLarge: CGFloat { safeWidth * 0.06 }
-    var spacingXXL: CGFloat { safeWidth * 0.12 }
-}
-
-private extension Color {
-    static let primaryBlueExt = Color(red: 0.10, green: 0.24, blue: 0.63)
-    static let backgroundCreamExt = Color(red: 0.99, green: 0.97, blue: 0.92)
 }
 
 #Preview("Single term") {
