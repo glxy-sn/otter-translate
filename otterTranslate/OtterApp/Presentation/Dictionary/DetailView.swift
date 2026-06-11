@@ -57,7 +57,7 @@ struct DictionaryDetailView: View {
                     
                     // MARK: Used in a sentence
                     VStack(alignment: .leading, spacing: layout.spacingSmall) {
-                        Text("Used in a sentence")
+                        Text("Indirect Example")
                             .font(.system(size: layout.fontXS, weight: .semibold))
                             .foregroundStyle(.white.opacity(0.6))
                         
