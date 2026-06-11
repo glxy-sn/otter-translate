@@ -12,78 +12,144 @@ struct ShareView: View {
     let onCancel: () -> Void
 
     var body: some View {
-        ZStack {
-            Color(red: 0.10, green: 0.24, blue: 0.63).ignoresSafeArea()
+        GeometryReader { geo in
+            let layout = ExtLayout(width: geo.size.width, height: geo.size.height)
+            ZStack {
+                Color.primaryBlueExt.ignoresSafeArea()
 
-            if let entry = viewModel.entry {
-                ScrollView(showsIndicators: false) {
-                    VStack(alignment: .leading, spacing: 0) {
-                        Text(entry.term.lowercased())
-                            .font(.system(size: 40, weight: .bold, design: .serif))
-                            .foregroundStyle(.white)
-                            .padding(.horizontal, 20)
-                            .padding(.top, 24)
-                            .padding(.bottom, 16)
+                if let shareEntry = viewModel.entry {
+                    ScrollView(showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: 0) {
+                            Text(shareEntry.term.lowercased())
+                                .font(.system(
+                                    size: layout.fontHero,
+                                    weight: .bold,
+                                    design: .serif
+                                ))
+                                .foregroundStyle(.white)
+                                .padding(.horizontal, layout.horizontalPadding)
+                                .padding(.top, layout.spacingXXL)
+                                .padding(.bottom, layout.spacingLarge)
 
-                        divider
-                            .padding(.bottom, 16)
+                            divider(layout: layout)
+                                .padding(.bottom, layout.spacingLarge)
 
-                        section(
-                            title: "Meaning",
-                            content: "Text yang kamu pilih dari Messages akan dipakai sebagai term untuk diproses di OtterTranslate."
-                        )
-                        .padding(.bottom, 16)
+                            section(
+                                title: "Meaning",
+                                content: "Text yang kamu pilih dari Messages akan diproses di OtterTranslate.",
+                                layout: layout
+                            )
+                            .padding(.bottom, layout.spacingLarge)
 
-                        divider
-                            .padding(.bottom, 16)
+                            divider(layout: layout)
+                                .padding(.bottom, layout.spacingLarge)
 
-                        section(
-                            title: "Indirect Example",
-                            content: "\"\(entry.term)\""
-                        )
-                        .padding(.bottom, 16)
+                            section(
+                                title: "Indirect Example",
+                                content: "\"\(shareEntry.term)\"",
+                                layout: layout
+                            )
+                            .padding(.bottom, layout.spacingLarge)
 
-                        section(
-                            title: "OtterTranslate",
-                            content: "Slide down sheet ini untuk kembali ke Messages."
-                        )
-                        .padding(.bottom, 24)
+                            corpKeyTranslationBox(
+                                translatedText: "Let's use what we already have so we don't have to spend more.",
+                                layout: layout
+                            )
+                            .padding(.horizontal, layout.horizontalPadding)
+                            .padding(.bottom, layout.spacingXXL)
+                        }
                     }
+                } else {
+                    ContentUnavailableView(
+                        "No text found",
+                        systemImage: "text.quote",
+                        description: Text("Pilih teks message lalu share kembali ke OtterTranslate.")
+                    )
+                    .foregroundStyle(.white)
                 }
-            } else {
-                ContentUnavailableView(
-                    "No text found",
-                    systemImage: "text.quote",
-                    description: Text("Pilih teks message lalu share kembali ke OtterTranslate.")
-                )
-                .foregroundStyle(.white)
             }
         }
         .presentationDragIndicator(.visible)
         .presentationCornerRadius(28)
-        .presentationBackground(Color(red: 0.10, green: 0.24, blue: 0.63))
+        .presentationBackground(Color.primaryBlueExt)
     }
 
-    private var divider: some View {
+    private func divider(layout: ExtLayout) -> some View {
         Rectangle()
             .fill(.white.opacity(0.2))
             .frame(height: 0.5)
-            .padding(.horizontal, 20)
+            .padding(.horizontal, layout.horizontalPadding)
     }
 
-    private func section(title: String, content: String) -> some View {
-        VStack(alignment: .leading, spacing: 8) {
+    private func section(title: String, content: String, layout: ExtLayout) -> some View {
+        VStack(alignment: .leading, spacing: layout.spacingSmall) {
             Text(title)
-                .font(.system(size: 12, weight: .semibold))
+                .font(.system(size: layout.fontXS, weight: .semibold))
                 .foregroundStyle(.white.opacity(0.6))
 
             Text(content)
-                .font(.system(size: 20, weight: .semibold))
+                .font(.system(size: layout.fontTitle, weight: .semibold))
                 .foregroundStyle(.white)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .padding(.horizontal, 20)
+        .padding(.horizontal, layout.horizontalPadding)
     }
+
+    private func corpKeyTranslationBox(translatedText: String, layout: ExtLayout) -> some View {
+        VStack(alignment: .leading, spacing: layout.spacingSmall) {
+            HStack(spacing: layout.spacingSmall) {
+                Image("otterKeyboard")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: layout.iconSize * 1.5, height: layout.iconSize * 1.5)
+
+                Text("Otter Translation")
+                    .font(.system(size: layout.fontSmall, weight: .semibold))
+                    .foregroundStyle(Color.primaryBlueExt)
+            }
+
+            Text(translatedText)
+                .font(.system(size: layout.fontBody))
+                .foregroundStyle(Color.primaryBlueExt.opacity(0.85))
+                .fixedSize(horizontal: false, vertical: true)
+                .lineSpacing(4)
+        }
+        .padding(layout.cardPadding)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color.backgroundCreamExt)
+        .clipShape(RoundedRectangle(cornerRadius: layout.cornerRadiusLarge))
+        .overlay(
+            RoundedRectangle(cornerRadius: layout.cornerRadiusLarge)
+                .stroke(Color.primaryBlueExt.opacity(0.15), lineWidth: 0.5)
+        )
+    }
+}
+
+private struct ExtLayout {
+    let width: CGFloat
+    let height: CGFloat
+
+    private var safeWidth: CGFloat { max(width, 1) }
+
+    var horizontalPadding: CGFloat { safeWidth * 0.05 }
+    var cardPadding: CGFloat { safeWidth * 0.04 }
+    var cornerRadiusLarge: CGFloat { safeWidth * 0.04 }
+    var iconSize: CGFloat { safeWidth * 0.06 }
+
+    var fontXS: CGFloat { safeWidth * 0.028 }
+    var fontSmall: CGFloat { safeWidth * 0.033 }
+    var fontBody: CGFloat { safeWidth * 0.038 }
+    var fontTitle: CGFloat { safeWidth * 0.055 }
+    var fontHero: CGFloat { safeWidth * 0.11 }
+
+    var spacingSmall: CGFloat { safeWidth * 0.03 }
+    var spacingLarge: CGFloat { safeWidth * 0.06 }
+    var spacingXXL: CGFloat { safeWidth * 0.12 }
+}
+
+private extension Color {
+    static let primaryBlueExt = Color(red: 0.10, green: 0.24, blue: 0.63)
+    static let backgroundCreamExt = Color(red: 0.99, green: 0.97, blue: 0.92)
 }
 
 #Preview {
