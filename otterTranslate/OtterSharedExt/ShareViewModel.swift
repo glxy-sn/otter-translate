@@ -6,19 +6,21 @@
 import Foundation
 import Combine
 
+struct ShareTermDetail: Equatable, Identifiable {
+    let id: String
+    let match: ExactMatchResult
+    let dictionaryEntry: JargonDictionaryEntry?
+}
+
 struct ShareEntry: Equatable {
     let inputText: String
-    let detectedMatches: [ExactMatchResult]
-    let dictionaryEntry: JargonDictionaryEntry?
-
-    var primaryMatch: ExactMatchResult? {
-        detectedMatches.first
-    }
+    let termDetails: [ShareTermDetail]
 }
 
 @MainActor
 final class ShareViewModel: ObservableObject {
     @Published private(set) var entry: ShareEntry?
+    @Published var selectedTermIndex: Int = 0
 
     private let matcher = ExactJargonMatcher.shared
     private let dictionary = JargonDictionaryStore.shared
@@ -27,18 +29,23 @@ final class ShareViewModel: ObservableObject {
         guard let cleaned = text?.trimmingCharacters(in: .whitespacesAndNewlines),
               cleaned.isEmpty == false else {
             entry = nil
+            selectedTermIndex = 0
             return
         }
 
-        let matches = matcher.detectExactTermsWithDetails(in: cleaned)
-        let dictionaryEntry = matches.first.flatMap {
-            dictionary.entry(forCanonicalId: $0.canonicalId)
+        let matches = matcher
+            .detectExactTermsWithDetails(in: cleaned)
+            .sorted { $0.start < $1.start }
+
+        let termDetails = matches.map { match in
+            ShareTermDetail(
+                id: match.id,
+                match: match,
+                dictionaryEntry: dictionary.entry(forCanonicalId: match.canonicalId)
+            )
         }
 
-        entry = ShareEntry(
-            inputText: cleaned,
-            detectedMatches: matches,
-            dictionaryEntry: dictionaryEntry
-        )
+        entry = ShareEntry(inputText: cleaned, termDetails: termDetails)
+        selectedTermIndex = 0
     }
 }

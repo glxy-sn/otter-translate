@@ -17,51 +17,28 @@ struct ShareView: View {
             ZStack {
                 Color.primaryBlueExt.ignoresSafeArea()
 
-                if let shareEntry = viewModel.entry,
-                   let detectedTerm = shareEntry.primaryMatch {
-                    ScrollView(showsIndicators: false) {
-                        VStack(alignment: .leading, spacing: 0) {
-                            Text(detectedTerm.canonicalTerm.lowercased())
-                                .font(.system(
-                                    size: layout.fontHero,
-                                    weight: .bold,
-                                    design: .serif
-                                ))
-                                .foregroundStyle(.white)
-                                .padding(.horizontal, layout.horizontalPadding)
-                                .padding(.top, layout.spacingXXL)
-                                .padding(.bottom, layout.spacingLarge)
-
-                            divider(layout: layout)
-                                .padding(.bottom, layout.spacingLarge)
-
-                            section(
-                                title: "Meaning",
-                                content: shareEntry.dictionaryEntry?.definition
-                                    ?? "Definition not available for this term.",
+                if let shareEntry = viewModel.entry, shareEntry.termDetails.isEmpty == false {
+                    VStack(spacing: 0) {
+                        if shareEntry.termDetails.count > 1 {
+                            termPageIndicator(
+                                currentIndex: viewModel.selectedTermIndex,
+                                totalCount: shareEntry.termDetails.count,
                                 layout: layout
                             )
-                            .padding(.bottom, layout.spacingLarge)
-
-                            divider(layout: layout)
-                                .padding(.bottom, layout.spacingLarge)
-
-                            section(
-                                title: "Indirect Example",
-                                content: shareEntry.dictionaryEntry?.indirectExample
-                                    ?? "\"\(detectedTerm.matchedText)\"",
-                                layout: layout
-                            )
-                            .padding(.bottom, layout.spacingLarge)
-
-                            corpKeyTranslationBox(
-                                translatedText: shareEntry.dictionaryEntry?.translatedExample
-                                    ?? "Translation example not available for this term.",
-                                layout: layout
-                            )
-                            .padding(.horizontal, layout.horizontalPadding)
-                            .padding(.bottom, layout.spacingXXL)
+                            .padding(.top, layout.spacingLarge)
+                            .padding(.bottom, layout.spacingSmall)
                         }
+
+                        TabView(selection: $viewModel.selectedTermIndex) {
+                            ForEach(
+                                Array(shareEntry.termDetails.enumerated()),
+                                id: \.element.id
+                            ) { index, detail in
+                                termDetailPage(detail: detail, layout: layout)
+                                    .tag(index)
+                            }
+                        }
+                        .tabViewStyle(.page(indexDisplayMode: .never))
                     }
                 } else if viewModel.entry != nil {
                     ContentUnavailableView(
@@ -83,6 +60,75 @@ struct ShareView: View {
         .presentationDragIndicator(.visible)
         .presentationCornerRadius(28)
         .presentationBackground(Color.primaryBlueExt)
+    }
+
+    private func termPageIndicator(
+        currentIndex: Int,
+        totalCount: Int,
+        layout: ExtLayout
+    ) -> some View {
+        VStack(spacing: layout.spacingSmall) {
+            Text("\(currentIndex + 1) of \(totalCount)")
+                .font(.system(size: layout.fontXS, weight: .semibold))
+                .foregroundStyle(.white.opacity(0.7))
+
+            HStack(spacing: layout.spacingSmall * 0.5) {
+                ForEach(0..<totalCount, id: \.self) { index in
+                    Capsule()
+                        .fill(index == currentIndex ? Color.white : Color.white.opacity(0.35))
+                        .frame(width: index == currentIndex ? 18 : 6, height: 6)
+                        .animation(.easeInOut(duration: 0.2), value: currentIndex)
+                }
+            }
+        }
+        .frame(maxWidth: .infinity)
+    }
+
+    private func termDetailPage(detail: ShareTermDetail, layout: ExtLayout) -> some View {
+        ScrollView(showsIndicators: false) {
+            VStack(alignment: .leading, spacing: 0) {
+                Text(detail.match.canonicalTerm.lowercased())
+                    .font(.system(
+                        size: layout.fontHero,
+                        weight: .bold,
+                        design: .serif
+                    ))
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, layout.horizontalPadding)
+                    .padding(.top, layout.spacingXXL)
+                    .padding(.bottom, layout.spacingLarge)
+
+                divider(layout: layout)
+                    .padding(.bottom, layout.spacingLarge)
+
+                section(
+                    title: "Meaning",
+                    content: detail.dictionaryEntry?.definition
+                        ?? "Definition not available for this term.",
+                    layout: layout
+                )
+                .padding(.bottom, layout.spacingLarge)
+
+                divider(layout: layout)
+                    .padding(.bottom, layout.spacingLarge)
+
+                section(
+                    title: "Indirect Example",
+                    content: detail.dictionaryEntry?.indirectExample
+                        ?? "\"\(detail.match.matchedText)\"",
+                    layout: layout
+                )
+                .padding(.bottom, layout.spacingLarge)
+
+                corpKeyTranslationBox(
+                    translatedText: detail.dictionaryEntry?.translatedExample
+                        ?? "Translation example not available for this term.",
+                    layout: layout
+                )
+                .padding(.horizontal, layout.horizontalPadding)
+                .padding(.bottom, layout.spacingXXL)
+            }
+        }
     }
 
     private func divider(layout: ExtLayout) -> some View {
@@ -163,8 +209,16 @@ private extension Color {
     static let backgroundCreamExt = Color(red: 0.99, green: 0.97, blue: 0.92)
 }
 
-#Preview {
+#Preview("Single term") {
     let viewModel = ShareViewModel()
     viewModel.setInputText("Let's do a deep dive on our roadmap.")
+    return ShareView(viewModel: viewModel, onDone: {}, onCancel: {})
+}
+
+#Preview("Multiple terms") {
+    let viewModel = ShareViewModel()
+    viewModel.setInputText(
+        "Let's do a deep dive and circle back on our 30,000-foot view strategy."
+    )
     return ShareView(viewModel: viewModel, onDone: {}, onCancel: {})
 }
