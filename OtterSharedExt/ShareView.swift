@@ -12,44 +12,77 @@ struct ShareView: View {
     let onCancel: () -> Void
 
     var body: some View {
-        NavigationStack {
-            Group {
-                if let entry = viewModel.entry {
-                    VStack(alignment: .leading, spacing: 12) {
-                        Text("entry.term")
-                            .font(.caption)
-                            .foregroundStyle(.secondary)
+        ZStack {
+            Color(red: 0.10, green: 0.24, blue: 0.63).ignoresSafeArea()
 
-                        Text(entry.term)
-                            .font(.title3.weight(.semibold))
-                            .frame(maxWidth: .infinity, alignment: .leading)
-                            .padding()
-                            .background(Color(uiColor: .secondarySystemBackground))
-                            .clipShape(RoundedRectangle(cornerRadius: 12))
+            if let entry = viewModel.entry {
+                ScrollView(showsIndicators: false) {
+                    VStack(alignment: .leading, spacing: 0) {
+                        Text(entry.term.lowercased())
+                            .font(.system(size: 40, weight: .bold, design: .serif))
+                            .foregroundStyle(.white)
+                            .padding(.horizontal, 20)
+                            .padding(.top, 24)
+                            .padding(.bottom, 16)
 
-                        Spacer()
+                        divider
+                            .padding(.bottom, 16)
+
+                        section(
+                            title: "Meaning",
+                            content: "Text yang kamu pilih dari Messages akan dipakai sebagai term untuk diproses di OtterTranslate."
+                        )
+                        .padding(.bottom, 16)
+
+                        divider
+                            .padding(.bottom, 16)
+
+                        section(
+                            title: "Indirect Example",
+                            content: "\"\(entry.term)\""
+                        )
+                        .padding(.bottom, 16)
+
+                        section(
+                            title: "OtterTranslate",
+                            content: "Slide down sheet ini untuk kembali ke Messages."
+                        )
+                        .padding(.bottom, 24)
                     }
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-                    .padding()
-                } else {
-                    ContentUnavailableView(
-                        "No text found",
-                        systemImage: "text.quote",
-                        description: Text("Pilih teks message lalu share kembali ke OtterTranslate.")
-                    )
                 }
-            }
-            .navigationTitle("OtterTranslate")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
-                    Button("Cancel") { onCancel() }
-                }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button("Done") { onDone() }
-                }
+            } else {
+                ContentUnavailableView(
+                    "No text found",
+                    systemImage: "text.quote",
+                    description: Text("Pilih teks message lalu share kembali ke OtterTranslate.")
+                )
+                .foregroundStyle(.white)
             }
         }
+        .presentationDragIndicator(.visible)
+        .presentationCornerRadius(28)
+        .presentationBackground(Color(red: 0.10, green: 0.24, blue: 0.63))
+    }
+
+    private var divider: some View {
+        Rectangle()
+            .fill(.white.opacity(0.2))
+            .frame(height: 0.5)
+            .padding(.horizontal, 20)
+    }
+
+    private func section(title: String, content: String) -> some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text(title)
+                .font(.system(size: 12, weight: .semibold))
+                .foregroundStyle(.white.opacity(0.6))
+
+            Text(content)
+                .font(.system(size: 20, weight: .semibold))
+                .foregroundStyle(.white)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(.horizontal, 20)
     }
 }
 
