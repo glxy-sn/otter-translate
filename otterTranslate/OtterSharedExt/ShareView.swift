@@ -17,10 +17,11 @@ struct ShareView: View {
             ZStack {
                 Color.primaryBlueExt.ignoresSafeArea()
 
-                if let shareEntry = viewModel.entry {
+                if let shareEntry = viewModel.entry,
+                   let detectedTerm = shareEntry.primaryMatch {
                     ScrollView(showsIndicators: false) {
                         VStack(alignment: .leading, spacing: 0) {
-                            Text(shareEntry.term.lowercased())
+                            Text(detectedTerm.canonicalTerm.lowercased())
                                 .font(.system(
                                     size: layout.fontHero,
                                     weight: .bold,
@@ -36,7 +37,8 @@ struct ShareView: View {
 
                             section(
                                 title: "Meaning",
-                                content: "Text yang kamu pilih dari Messages akan diproses di OtterTranslate.",
+                                content: shareEntry.dictionaryEntry?.definition
+                                    ?? "Definition not available for this term.",
                                 layout: layout
                             )
                             .padding(.bottom, layout.spacingLarge)
@@ -46,19 +48,28 @@ struct ShareView: View {
 
                             section(
                                 title: "Indirect Example",
-                                content: "\"\(shareEntry.term)\"",
+                                content: shareEntry.dictionaryEntry?.indirectExample
+                                    ?? "\"\(detectedTerm.matchedText)\"",
                                 layout: layout
                             )
                             .padding(.bottom, layout.spacingLarge)
 
                             corpKeyTranslationBox(
-                                translatedText: "Let's use what we already have so we don't have to spend more.",
+                                translatedText: shareEntry.dictionaryEntry?.translatedExample
+                                    ?? "Translation example not available for this term.",
                                 layout: layout
                             )
                             .padding(.horizontal, layout.horizontalPadding)
                             .padding(.bottom, layout.spacingXXL)
                         }
                     }
+                } else if viewModel.entry != nil {
+                    ContentUnavailableView(
+                        "No jargon found",
+                        systemImage: "text.magnifyingglass",
+                        description: Text("Teks ditemukan, tapi tidak ada jargon yang cocok di kalimat ini.")
+                    )
+                    .foregroundStyle(.white)
                 } else {
                     ContentUnavailableView(
                         "No text found",
@@ -154,6 +165,6 @@ private extension Color {
 
 #Preview {
     let viewModel = ShareViewModel()
-    viewModel.setInputText("Message text from iMessage")
+    viewModel.setInputText("Let's do a deep dive on our roadmap.")
     return ShareView(viewModel: viewModel, onDone: {}, onCancel: {})
 }
