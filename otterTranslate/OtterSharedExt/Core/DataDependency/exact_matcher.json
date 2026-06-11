@@ -1,0 +1,2323 @@
+{
+  "metadata": {
+    "matcher_type": "regex_longest_match",
+    "boundary_rule": "(?<![A-Za-z0-9])TERM(?![A-Za-z0-9])",
+    "sort_order": "descending match_length",
+    "normalization": "NFKC + strip on dictionary terms",
+    "created_at": "2026-06-10T04:25:02.972303+00:00"
+  },
+  "patterns": [
+    {
+      "term": "Bite off more than you can chew",
+      "canonical_id": "bite off more than you can chew",
+      "canonical_term": "Bite off more than you can chew",
+      "pattern": "(?<![A-Za-z0-9])Bite\\s+off\\s+more\\s+than\\s+you\\s+can\\s+chew(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 31
+    },
+    {
+      "term": "Keep your ear to the ground",
+      "canonical_id": "keep your ear to the ground",
+      "canonical_term": "Keep your ear to the ground",
+      "pattern": "(?<![A-Za-z0-9])Keep\\s+your\\s+ear\\s+to\\s+the\\s+ground(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 27
+    },
+    {
+      "term": "Kick the can down the road",
+      "canonical_id": "kick the can down the road",
+      "canonical_term": "Kick the can down the road",
+      "pattern": "(?<![A-Za-z0-9])Kick\\s+the\\s+can\\s+down\\s+the\\s+road(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 26
+    },
+    {
+      "term": "Put your best foot forward",
+      "canonical_id": "put your best foot forward",
+      "canonical_term": "Put your best foot forward",
+      "pattern": "(?<![A-Za-z0-9])Put\\s+your\\s+best\\s+foot\\s+forward(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 26
+    },
+    {
+      "term": "Put it on the back burner",
+      "canonical_id": "put it on the back burner",
+      "canonical_term": "Put it on the back burner",
+      "pattern": "(?<![A-Za-z0-9])Put\\s+it\\s+on\\s+the\\s+back\\s+burner(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 25
+    },
+    {
+      "term": "Burning the midnight oil",
+      "canonical_id": "burning the midnight oil",
+      "canonical_term": "Burning the midnight oil",
+      "pattern": "(?<![A-Za-z0-9])Burning\\s+the\\s+midnight\\s+oil(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 24
+    },
+    {
+      "term": "Ball in someone's court",
+      "canonical_id": "ball in someone s court",
+      "canonical_term": "Ball in someone's court",
+      "pattern": "(?<![A-Za-z0-9])Ball\\s+in\\s+someone's\\s+court(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 23
+    },
+    {
+      "term": "Cascade the information",
+      "canonical_id": "cascade the information",
+      "canonical_term": "Cascade the information",
+      "pattern": "(?<![A-Za-z0-9])Cascade\\s+the\\s+information(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 23
+    },
+    {
+      "term": "Get down to brass tacks",
+      "canonical_id": "get down to brass tacks",
+      "canonical_term": "Get down to brass tacks",
+      "pattern": "(?<![A-Za-z0-9])Get\\s+down\\s+to\\s+brass\\s+tacks(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 23
+    },
+    {
+      "term": "Get your ducks in a row",
+      "canonical_id": "get your ducks in a row",
+      "canonical_term": "Get your ducks in a row",
+      "pattern": "(?<![A-Za-z0-9])Get\\s+your\\s+ducks\\s+in\\s+a\\s+row(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 23
+    },
+    {
+      "term": "Canary in the coalmine",
+      "canonical_id": "canary in the coalmine",
+      "canonical_term": "Canary in the coalmine",
+      "pattern": "(?<![A-Za-z0-9])Canary\\s+in\\s+the\\s+coalmine(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 22
+    },
+    {
+      "term": "Hit the ground running",
+      "canonical_id": "hit the ground running",
+      "canonical_term": "Hit the ground running",
+      "pattern": "(?<![A-Za-z0-9])Hit\\s+the\\s+ground\\s+running(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 22
+    },
+    {
+      "term": "Incremental innovation",
+      "canonical_id": "incremental innovation",
+      "canonical_term": "Incremental innovation",
+      "pattern": "(?<![A-Za-z0-9])Incremental\\s+innovation(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 22
+    },
+    {
+      "term": "Run it up the flagpole",
+      "canonical_id": "run it up the flagpole",
+      "canonical_term": "Run it up the flagpole",
+      "pattern": "(?<![A-Za-z0-9])Run\\s+it\\s+up\\s+the\\s+flagpole(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 22
+    },
+    {
+      "term": "At the end of the day",
+      "canonical_id": "at the end of the day",
+      "canonical_term": "At the end of the day",
+      "pattern": "(?<![A-Za-z0-9])At\\s+the\\s+end\\s+of\\s+the\\s+day(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 21
+    },
+    {
+      "term": "Blocking and tackling",
+      "canonical_id": "blocking and tackling",
+      "canonical_term": "Blocking and tackling",
+      "pattern": "(?<![A-Za-z0-9])Blocking\\s+and\\s+tackling(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 21
+    },
+    {
+      "term": "Cost-benefit analysis",
+      "canonical_id": "cost benefit analysis",
+      "canonical_term": "Cost-benefit analysis",
+      "pattern": "(?<![A-Za-z0-9])Cost\\-benefit\\s+analysis(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 21
+    },
+    {
+      "term": "Cut through the noise",
+      "canonical_id": "cut through the noise",
+      "canonical_term": "Cut through the noise",
+      "pattern": "(?<![A-Za-z0-9])Cut\\s+through\\s+the\\s+noise(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 21
+    },
+    {
+      "term": "Disruptive technology",
+      "canonical_id": "disruptive technology",
+      "canonical_term": "Disruptive technology",
+      "pattern": "(?<![A-Za-z0-9])Disruptive\\s+technology(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 21
+    },
+    {
+      "term": "Dotted line reporting",
+      "canonical_id": "dotted line reporting",
+      "canonical_term": "Dotted line reporting",
+      "pattern": "(?<![A-Za-z0-9])Dotted\\s+line\\s+reporting(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 21
+    },
+    {
+      "term": "Play devil's advocate",
+      "canonical_id": "play devil s advocate",
+      "canonical_term": "Play devil's advocate",
+      "pattern": "(?<![A-Za-z0-9])Play\\s+devil's\\s+advocate(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 21
+    },
+    {
+      "term": "Think outside the box",
+      "canonical_id": "think outside the box",
+      "canonical_term": "Think outside the box",
+      "pattern": "(?<![A-Za-z0-9])Think\\s+outside\\s+the\\s+box(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 21
+    },
+    {
+      "term": "Clarify expectations",
+      "canonical_id": "clarify expectations",
+      "canonical_term": "Clarify expectations",
+      "pattern": "(?<![A-Za-z0-9])Clarify\\s+expectations(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 20
+    },
+    {
+      "term": "Collaborative effort",
+      "canonical_id": "collaborative effort",
+      "canonical_term": "Collaborative effort",
+      "pattern": "(?<![A-Za-z0-9])Collaborative\\s+effort(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 20
+    },
+    {
+      "term": "Delight the customer",
+      "canonical_id": "delight the customer",
+      "canonical_term": "Delight the customer",
+      "pattern": "(?<![A-Za-z0-9])Delight\\s+the\\s+customer(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 20
+    },
+    {
+      "term": "Elephant in the room",
+      "canonical_id": "elephant in the room",
+      "canonical_term": "Elephant in the room",
+      "pattern": "(?<![A-Za-z0-9])Elephant\\s+in\\s+the\\s+room(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 20
+    },
+    {
+      "term": "Get the ball rolling",
+      "canonical_id": "get the ball rolling",
+      "canonical_term": "Get the ball rolling",
+      "pattern": "(?<![A-Za-z0-9])Get\\s+the\\s+ball\\s+rolling(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 20
+    },
+    {
+      "term": "In the driver's seat",
+      "canonical_id": "in the driver s seat",
+      "canonical_term": "In the driver's seat",
+      "pattern": "(?<![A-Za-z0-9])In\\s+the\\s+driver's\\s+seat(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 20
+    },
+    {
+      "term": "Institutional memory",
+      "canonical_id": "institutional memory",
+      "canonical_term": "Institutional memory",
+      "pattern": "(?<![A-Za-z0-9])Institutional\\s+memory(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 20
+    },
+    {
+      "term": "Step up to the plate",
+      "canonical_id": "step up to the plate",
+      "canonical_term": "Step up to the plate",
+      "pattern": "(?<![A-Za-z0-9])Step\\s+up\\s+to\\s+the\\s+plate(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 20
+    },
+    {
+      "term": "Take it step by step",
+      "canonical_id": "take it step by step",
+      "canonical_term": "Take it step by step",
+      "pattern": "(?<![A-Za-z0-9])Take\\s+it\\s+step\\s+by\\s+step(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 20
+    },
+    {
+      "term": "Actionable insights",
+      "canonical_id": "actionable insights",
+      "canonical_term": "Actionable insights",
+      "pattern": "(?<![A-Za-z0-9])Actionable\\s+insights(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 19
+    },
+    {
+      "term": "Chatham House Rules",
+      "canonical_id": "chatham house rules",
+      "canonical_term": "Chatham House Rules",
+      "pattern": "(?<![A-Za-z0-9])Chatham\\s+House\\s+Rules(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 19
+    },
+    {
+      "term": "Employee engagement",
+      "canonical_id": "employee engagement",
+      "canonical_term": "Employee engagement",
+      "pattern": "(?<![A-Za-z0-9])Employee\\s+engagement(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 19
+    },
+    {
+      "term": "Manage expectations",
+      "canonical_id": "manage expectations",
+      "canonical_term": "Manage expectations",
+      "pattern": "(?<![A-Za-z0-9])Manage\\s+expectations(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 19
+    },
+    {
+      "term": "Strategic alignment",
+      "canonical_id": "strategic alignment",
+      "canonical_term": "Strategic alignment",
+      "pattern": "(?<![A-Za-z0-9])Strategic\\s+alignment(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 19
+    },
+    {
+      "term": "White-glove service",
+      "canonical_id": "white glove service",
+      "canonical_term": "White-glove service",
+      "pattern": "(?<![A-Za-z0-9])White\\-glove\\s+service(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 19
+    },
+    {
+      "term": "Customer retention",
+      "canonical_id": "customer retention",
+      "canonical_term": "Customer retention",
+      "pattern": "(?<![A-Za-z0-9])Customer\\s+retention(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 18
+    },
+    {
+      "term": "Executive decision",
+      "canonical_id": "executive decision",
+      "canonical_term": "Executive decision",
+      "pattern": "(?<![A-Za-z0-9])Executive\\s+decision(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 18
+    },
+    {
+      "term": "In your wheelhouse",
+      "canonical_id": "in your wheelhouse",
+      "canonical_term": "In your wheelhouse",
+      "pattern": "(?<![A-Za-z0-9])In\\s+your\\s+wheelhouse(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 18
+    },
+    {
+      "term": "Knowledge transfer",
+      "canonical_id": "knowledge transfer",
+      "canonical_term": "Knowledge transfer",
+      "pattern": "(?<![A-Za-z0-9])Knowledge\\s+transfer(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 18
+    },
+    {
+      "term": "Move the goalposts",
+      "canonical_id": "move the goalposts",
+      "canonical_term": "Move the goalposts",
+      "pattern": "(?<![A-Za-z0-9])Move\\s+the\\s+goalposts(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 18
+    },
+    {
+      "term": "Reinvent the wheel",
+      "canonical_id": "reinvent the wheel",
+      "canonical_term": "Reinvent the wheel",
+      "pattern": "(?<![A-Za-z0-9])Reinvent\\s+the\\s+wheel(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 18
+    },
+    {
+      "term": "Speak of the devil",
+      "canonical_id": "speak of the devil",
+      "canonical_term": "Speak of the devil",
+      "pattern": "(?<![A-Za-z0-9])Speak\\s+of\\s+the\\s+devil(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 18
+    },
+    {
+      "term": "Wear multiple hats",
+      "canonical_id": "wear multiple hats",
+      "canonical_term": "Wear multiple hats",
+      "pattern": "(?<![A-Za-z0-9])Wear\\s+multiple\\s+hats(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 18
+    },
+    {
+      "term": "Blue sky thinking",
+      "canonical_id": "blue sky thinking",
+      "canonical_term": "Blue sky thinking",
+      "pattern": "(?<![A-Za-z0-9])Blue\\s+sky\\s+thinking(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 17
+    },
+    {
+      "term": "Circle the wagons",
+      "canonical_id": "circle the wagons",
+      "canonical_term": "Circle the wagons",
+      "pattern": "(?<![A-Za-z0-9])Circle\\s+the\\s+wagons(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 17
+    },
+    {
+      "term": "Cross-pollination",
+      "canonical_id": "cross pollination",
+      "canonical_term": "Cross-pollination",
+      "pattern": "(?<![A-Za-z0-9])Cross\\-pollination(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 17
+    },
+    {
+      "term": "Customer advocacy",
+      "canonical_id": "customer advocacy",
+      "canonical_term": "Customer advocacy",
+      "pattern": "(?<![A-Za-z0-9])Customer\\s+advocacy(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 17
+    },
+    {
+      "term": "Executive summary",
+      "canonical_id": "executive summary",
+      "canonical_term": "Executive summary",
+      "pattern": "(?<![A-Za-z0-9])Executive\\s+summary(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 17
+    },
+    {
+      "term": "Low-hanging fruit",
+      "canonical_id": "low hanging fruit",
+      "canonical_term": "Low-hanging fruit",
+      "pattern": "(?<![A-Za-z0-9])Low\\-hanging\\s+fruit(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 17
+    },
+    {
+      "term": "Ownership mindset",
+      "canonical_id": "ownership mindset",
+      "canonical_term": "Ownership mindset",
+      "pattern": "(?<![A-Za-z0-9])Ownership\\s+mindset(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 17
+    },
+    {
+      "term": "Take this offline",
+      "canonical_id": "take this offline",
+      "canonical_term": "Take this offline",
+      "pattern": "(?<![A-Za-z0-9])Take\\s+this\\s+offline(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 17
+    },
+    {
+      "term": "Under the weather",
+      "canonical_id": "under the weather",
+      "canonical_term": "Under the weather",
+      "pattern": "(?<![A-Za-z0-9])Under\\s+the\\s+weather(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 17
+    },
+    {
+      "term": "Work-life balance",
+      "canonical_id": "work life balance",
+      "canonical_term": "Work-life balance",
+      "pattern": "(?<![A-Za-z0-9])Work\\-life\\s+balance(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 17
+    },
+    {
+      "term": "30,000-feet view",
+      "canonical_id": "30 000 feet view",
+      "canonical_term": "30,000-feet view",
+      "pattern": "(?<![A-Za-z0-9])30,000\\-feet\\s+view(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "30,000-foot view",
+      "canonical_id": "30 000 feet view",
+      "canonical_term": "30,000-feet view",
+      "pattern": "(?<![A-Za-z0-9])30,000\\-foot\\s+view(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Cross-functional",
+      "canonical_id": "cross functional",
+      "canonical_term": "Cross-functional",
+      "pattern": "(?<![A-Za-z0-9])Cross\\-functional(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Customer journey",
+      "canonical_id": "customer journey",
+      "canonical_term": "Customer journey",
+      "pattern": "(?<![A-Za-z0-9])Customer\\s+journey(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Customer-centric",
+      "canonical_id": "customer centric",
+      "canonical_term": "Customer-centric",
+      "pattern": "(?<![A-Za-z0-9])Customer\\-centric(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Cut to the chase",
+      "canonical_id": "cut to the chase",
+      "canonical_term": "Cut to the chase",
+      "pattern": "(?<![A-Za-z0-9])Cut\\s+to\\s+the\\s+chase(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Horizon scanning",
+      "canonical_id": "horizon scanning",
+      "canonical_term": "Horizon scanning",
+      "pattern": "(?<![A-Za-z0-9])Horizon\\s+scanning(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "In the spotlight",
+      "canonical_id": "in the spotlight",
+      "canonical_term": "In the spotlight",
+      "pattern": "(?<![A-Za-z0-9])In\\s+the\\s+spotlight(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Keep in the loop",
+      "canonical_id": "keep in the loop",
+      "canonical_term": "Keep in the loop",
+      "pattern": "(?<![A-Za-z0-9])Keep\\s+in\\s+the\\s+loop(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Mission critical",
+      "canonical_id": "mission critical",
+      "canonical_term": "Mission critical",
+      "pattern": "(?<![A-Za-z0-9])Mission\\s+critical(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "On the same page",
+      "canonical_id": "on the same page",
+      "canonical_term": "On the same page",
+      "pattern": "(?<![A-Za-z0-9])On\\s+the\\s+same\\s+page(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Opportunity cost",
+      "canonical_id": "opportunity cost",
+      "canonical_term": "Opportunity cost",
+      "pattern": "(?<![A-Za-z0-9])Opportunity\\s+cost(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Proof of concept",
+      "canonical_id": "proof of concept",
+      "canonical_term": "Proof of concept",
+      "pattern": "(?<![A-Za-z0-9])Proof\\s+of\\s+concept(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Rally the troops",
+      "canonical_id": "rally the troops",
+      "canonical_term": "Rally the troops",
+      "pattern": "(?<![A-Za-z0-9])Rally\\s+the\\s+troops(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Surface an issue",
+      "canonical_id": "surface an issue",
+      "canonical_term": "Surface an issue",
+      "pattern": "(?<![A-Za-z0-9])Surface\\s+an\\s+issue(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 16
+    },
+    {
+      "term": "Back-channeling",
+      "canonical_id": "back channeling",
+      "canonical_term": "Back-channeling",
+      "pattern": "(?<![A-Za-z0-9])Back\\-channeling(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Bite the bullet",
+      "canonical_id": "bite the bullet",
+      "canonical_term": "Bite the bullet",
+      "pattern": "(?<![A-Za-z0-9])Bite\\s+the\\s+bullet(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Core competency",
+      "canonical_id": "core competency",
+      "canonical_term": "Core competency",
+      "pattern": "(?<![A-Za-z0-9])Core\\s+competency(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Full disclosure",
+      "canonical_id": "full disclosure",
+      "canonical_term": "Full disclosure",
+      "pattern": "(?<![A-Za-z0-9])Full\\s+disclosure(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Give a heads up",
+      "canonical_id": "give a heads up",
+      "canonical_term": "Give a heads up",
+      "pattern": "(?<![A-Za-z0-9])Give\\s+a\\s+heads\\s+up(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "In the pipeline",
+      "canonical_id": "in the pipeline",
+      "canonical_term": "In the pipeline",
+      "pattern": "(?<![A-Za-z0-9])In\\s+the\\s+pipeline(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Lead the charge",
+      "canonical_id": "lead the charge",
+      "canonical_term": "Lead the charge",
+      "pattern": "(?<![A-Za-z0-9])Lead\\s+the\\s+charge(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Move the needle",
+      "canonical_id": "move the needle",
+      "canonical_term": "Move the needle",
+      "pattern": "(?<![A-Za-z0-9])Move\\s+the\\s+needle(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Open the kimono",
+      "canonical_id": "open the kimono",
+      "canonical_term": "Open the kimono",
+      "pattern": "(?<![A-Za-z0-9])Open\\s+the\\s+kimono(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Outside the box",
+      "canonical_id": "outside the box",
+      "canonical_term": "Outside the box",
+      "pattern": "(?<![A-Za-z0-9])Outside\\s+the\\s+box(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Pick your brain",
+      "canonical_id": "pick your brain",
+      "canonical_term": "Pick your brain",
+      "pattern": "(?<![A-Za-z0-9])Pick\\s+your\\s+brain(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Put a pin in it",
+      "canonical_id": "put a pin in it",
+      "canonical_term": "Put a pin in it",
+      "pattern": "(?<![A-Za-z0-9])Put\\s+a\\s+pin\\s+in\\s+it(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Take it offline",
+      "canonical_id": "take it offline",
+      "canonical_term": "Take it offline",
+      "pattern": "(?<![A-Za-z0-9])Take\\s+it\\s+offline(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Under the radar",
+      "canonical_id": "under the radar",
+      "canonical_term": "Under the radar",
+      "pattern": "(?<![A-Za-z0-9])Under\\s+the\\s+radar(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 15
+    },
+    {
+      "term": "Boil the ocean",
+      "canonical_id": "boil the ocean",
+      "canonical_term": "Boil the ocean",
+      "pattern": "(?<![A-Za-z0-9])Boil\\s+the\\s+ocean(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Close the loop",
+      "canonical_id": "close the loop",
+      "canonical_term": "Close the loop",
+      "pattern": "(?<![A-Za-z0-9])Close\\s+the\\s+loop(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Direct reports",
+      "canonical_id": "direct reports",
+      "canonical_term": "Direct reports",
+      "pattern": "(?<![A-Za-z0-9])Direct\\s+reports(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Ducks in a row",
+      "canonical_id": "ducks in a row",
+      "canonical_term": "Ducks in a row",
+      "pattern": "(?<![A-Za-z0-9])Ducks\\s+in\\s+a\\s+row(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Get a sense of",
+      "canonical_id": "get a sense of",
+      "canonical_term": "Get a sense of",
+      "pattern": "(?<![A-Za-z0-9])Get\\s+a\\s+sense\\s+of(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Innovation hub",
+      "canonical_id": "innovation hub",
+      "canonical_term": "Innovation hub",
+      "pattern": "(?<![A-Za-z0-9])Innovation\\s+hub(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Jump on a call",
+      "canonical_id": "jump on a call",
+      "canonical_term": "Jump on a call",
+      "pattern": "(?<![A-Za-z0-9])Jump\\s+on\\s+a\\s+call(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Knowledge silo",
+      "canonical_id": "knowledge silo",
+      "canonical_term": "Knowledge silo",
+      "pattern": "(?<![A-Za-z0-9])Knowledge\\s+silo(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Off the record",
+      "canonical_id": "off the record",
+      "canonical_term": "Off the record",
+      "pattern": "(?<![A-Za-z0-9])Off\\s+the\\s+record(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Out of the box",
+      "canonical_id": "out of the box",
+      "canonical_term": "Out of the box",
+      "pattern": "(?<![A-Za-z0-9])Out\\s+of\\s+the\\s+box(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Over the fence",
+      "canonical_id": "over the fence",
+      "canonical_term": "Over the fence",
+      "pattern": "(?<![A-Za-z0-9])Over\\s+the\\s+fence(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Paradigm shift",
+      "canonical_id": "paradigm shift",
+      "canonical_term": "Paradigm shift",
+      "pattern": "(?<![A-Za-z0-9])Paradigm\\s+shift(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Take ownership",
+      "canonical_id": "take ownership",
+      "canonical_term": "Take ownership",
+      "pattern": "(?<![A-Za-z0-9])Take\\s+ownership(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Team alignment",
+      "canonical_id": "team alignment",
+      "canonical_term": "Team alignment",
+      "pattern": "(?<![A-Za-z0-9])Team\\s+alignment(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Thought leader",
+      "canonical_id": "thought leader",
+      "canonical_term": "Thought leader",
+      "pattern": "(?<![A-Za-z0-9])Thought\\s+leader(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 14
+    },
+    {
+      "term": "Best practice",
+      "canonical_id": "best practice",
+      "canonical_term": "Best practice",
+      "pattern": "(?<![A-Za-z0-9])Best\\s+practice(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Business case",
+      "canonical_id": "business case",
+      "canonical_term": "Business case",
+      "pattern": "(?<![A-Za-z0-9])Business\\s+case(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Call it a day",
+      "canonical_id": "call it a day",
+      "canonical_term": "Call it a day",
+      "pattern": "(?<![A-Za-z0-9])Call\\s+it\\s+a\\s+day(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Critical path",
+      "canonical_id": "critical path",
+      "canonical_term": "Critical path",
+      "pattern": "(?<![A-Za-z0-9])Critical\\s+path(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Dive right in",
+      "canonical_id": "dive right in",
+      "canonical_term": "Dive right in",
+      "pattern": "(?<![A-Za-z0-9])Dive\\s+right\\s+in(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Drop the ball",
+      "canonical_id": "drop the ball",
+      "canonical_term": "Drop the ball",
+      "pattern": "(?<![A-Za-z0-9])Drop\\s+the\\s+ball(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Due diligence",
+      "canonical_id": "due diligence",
+      "canonical_term": "Due diligence",
+      "pattern": "(?<![A-Za-z0-9])Due\\s+diligence(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Gain traction",
+      "canonical_id": "gain traction",
+      "canonical_term": "Gain traction",
+      "pattern": "(?<![A-Za-z0-9])Gain\\s+traction(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Going forward",
+      "canonical_id": "going forward",
+      "canonical_term": "Going forward",
+      "pattern": "(?<![A-Za-z0-9])Going\\s+forward(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "In a nutshell",
+      "canonical_id": "in a nutshell",
+      "canonical_term": "In a nutshell",
+      "pattern": "(?<![A-Za-z0-9])In\\s+a\\s+nutshell(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Off the table",
+      "canonical_id": "off the table",
+      "canonical_term": "Off the table",
+      "pattern": "(?<![A-Za-z0-9])Off\\s+the\\s+table(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Out of pocket",
+      "canonical_id": "out of pocket",
+      "canonical_term": "Out of pocket",
+      "pattern": "(?<![A-Za-z0-9])Out\\s+of\\s+pocket(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Pressure test",
+      "canonical_id": "pressure test",
+      "canonical_term": "Pressure test",
+      "pattern": "(?<![A-Za-z0-9])Pressure\\s+test(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Raise the bar",
+      "canonical_id": "raise the bar",
+      "canonical_term": "Raise the bar",
+      "pattern": "(?<![A-Za-z0-9])Raise\\s+the\\s+bar(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Strategic fit",
+      "canonical_id": "strategic fit",
+      "canonical_term": "Strategic fit",
+      "pattern": "(?<![A-Za-z0-9])Strategic\\s+fit(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Take the lead",
+      "canonical_id": "take the lead",
+      "canonical_term": "Take the lead",
+      "pattern": "(?<![A-Za-z0-9])Take\\s+the\\s+lead(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Think through",
+      "canonical_id": "think through",
+      "canonical_term": "Think through",
+      "pattern": "(?<![A-Za-z0-9])Think\\s+through(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 13
+    },
+    {
+      "term": "Can of worms",
+      "canonical_id": "can of worms",
+      "canonical_term": "Can of worms",
+      "pattern": "(?<![A-Za-z0-9])Can\\s+of\\s+worms(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 12
+    },
+    {
+      "term": "Double-click",
+      "canonical_id": "double click",
+      "canonical_term": "Double-click",
+      "pattern": "(?<![A-Za-z0-9])Double\\-click(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 12
+    },
+    {
+      "term": "Future-proof",
+      "canonical_id": "future proof",
+      "canonical_term": "Future-proof",
+      "pattern": "(?<![A-Za-z0-9])Future\\-proof(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 12
+    },
+    {
+      "term": "Game changer",
+      "canonical_id": "game changer",
+      "canonical_term": "Game changer",
+      "pattern": "(?<![A-Za-z0-9])Game\\s+changer(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 12
+    },
+    {
+      "term": "Key takeaway",
+      "canonical_id": "key takeaway",
+      "canonical_term": "Key takeaway",
+      "pattern": "(?<![A-Za-z0-9])Key\\s+takeaway(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 12
+    },
+    {
+      "term": "On the fence",
+      "canonical_id": "on the fence",
+      "canonical_term": "On the fence",
+      "pattern": "(?<![A-Za-z0-9])On\\s+the\\s+fence(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 12
+    },
+    {
+      "term": "On the radar",
+      "canonical_id": "on the radar",
+      "canonical_term": "On the radar",
+      "pattern": "(?<![A-Za-z0-9])On\\s+the\\s+radar(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 12
+    },
+    {
+      "term": "Ping someone",
+      "canonical_id": "ping someone",
+      "canonical_term": "Ping someone",
+      "pattern": "(?<![A-Za-z0-9])Ping\\s+someone(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 12
+    },
+    {
+      "term": "Table stakes",
+      "canonical_id": "table stakes",
+      "canonical_term": "Table stakes",
+      "pattern": "(?<![A-Za-z0-9])Table\\s+stakes(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 12
+    },
+    {
+      "term": "Transparency",
+      "canonical_id": "transparency",
+      "canonical_term": "Transparency",
+      "pattern": "(?<![A-Za-z0-9])Transparency(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 12
+    },
+    {
+      "term": "Action item",
+      "canonical_id": "action item",
+      "canonical_term": "Action item",
+      "pattern": "(?<![A-Za-z0-9])Action\\s+item(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Bottom line",
+      "canonical_id": "bottom line",
+      "canonical_term": "Bottom line",
+      "pattern": "(?<![A-Za-z0-9])Bottom\\s+line(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Circle back",
+      "canonical_id": "circle back",
+      "canonical_term": "Circle back",
+      "pattern": "(?<![A-Za-z0-9])Circle\\s+back(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Culture fit",
+      "canonical_id": "culture fit",
+      "canonical_term": "Culture fit",
+      "pattern": "(?<![A-Za-z0-9])Culture\\s+fit(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Cut corners",
+      "canonical_id": "cut corners",
+      "canonical_term": "Cut corners",
+      "pattern": "(?<![A-Za-z0-9])Cut\\s+corners(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Data driven",
+      "canonical_id": "data driven",
+      "canonical_term": "Data driven",
+      "pattern": "(?<![A-Za-z0-9])Data\\s+driven(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Deliverable",
+      "canonical_id": "deliverable",
+      "canonical_term": "Deliverable",
+      "pattern": "(?<![A-Za-z0-9])Deliverable(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Double down",
+      "canonical_id": "double down",
+      "canonical_term": "Double down",
+      "pattern": "(?<![A-Za-z0-9])Double\\s+down(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Forecasting",
+      "canonical_id": "forecasting",
+      "canonical_term": "Forecasting",
+      "pattern": "(?<![A-Za-z0-9])Forecasting(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Gantt chart",
+      "canonical_id": "gantt chart",
+      "canonical_term": "Gantt chart",
+      "pattern": "(?<![A-Za-z0-9])Gantt\\s+chart(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "In the loop",
+      "canonical_id": "in the loop",
+      "canonical_term": "In the loop",
+      "pattern": "(?<![A-Za-z0-9])In\\s+the\\s+loop(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Incentivize",
+      "canonical_id": "incentivize",
+      "canonical_term": "Incentivize",
+      "pattern": "(?<![A-Za-z0-9])Incentivize(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "On my radar",
+      "canonical_id": "on my radar",
+      "canonical_term": "On my radar",
+      "pattern": "(?<![A-Za-z0-9])On\\s+my\\s+radar(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Stakeholder",
+      "canonical_id": "stakeholder",
+      "canonical_term": "Stakeholder",
+      "pattern": "(?<![A-Za-z0-9])Stakeholder(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Team player",
+      "canonical_id": "team player",
+      "canonical_term": "Team player",
+      "pattern": "(?<![A-Za-z0-9])Team\\s+player(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Think ahead",
+      "canonical_id": "think ahead",
+      "canonical_term": "Think ahead",
+      "pattern": "(?<![A-Za-z0-9])Think\\s+ahead(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Triangulate",
+      "canonical_id": "triangulate",
+      "canonical_term": "Triangulate",
+      "pattern": "(?<![A-Za-z0-9])Triangulate(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 11
+    },
+    {
+      "term": "Actionable",
+      "canonical_id": "actionable",
+      "canonical_term": "Actionable",
+      "pattern": "(?<![A-Za-z0-9])Actionable(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Align upon",
+      "canonical_id": "align",
+      "canonical_term": "Align",
+      "pattern": "(?<![A-Za-z0-9])Align\\s+upon(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Backburner",
+      "canonical_id": "backburner",
+      "canonical_term": "Backburner",
+      "pattern": "(?<![A-Za-z0-9])Backburner(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Bellwether",
+      "canonical_id": "bellwether",
+      "canonical_term": "Bellwether",
+      "pattern": "(?<![A-Za-z0-9])Bellwether(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Blue ocean",
+      "canonical_id": "blue ocean",
+      "canonical_term": "Blue ocean",
+      "pattern": "(?<![A-Za-z0-9])Blue\\s+ocean(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Brain dump",
+      "canonical_id": "brain dump",
+      "canonical_term": "Brain dump",
+      "pattern": "(?<![A-Za-z0-9])Brain\\s+dump(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Break even",
+      "canonical_id": "break even",
+      "canonical_term": "Break even",
+      "pattern": "(?<![A-Za-z0-9])Break\\s+even(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Churn rate",
+      "canonical_id": "churn rate",
+      "canonical_term": "Churn rate",
+      "pattern": "(?<![A-Za-z0-9])Churn\\s+rate(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Drill down",
+      "canonical_id": "drill down",
+      "canonical_term": "Drill down",
+      "pattern": "(?<![A-Za-z0-9])Drill\\s+down(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Dry powder",
+      "canonical_id": "dry powder",
+      "canonical_term": "Dry powder",
+      "pattern": "(?<![A-Za-z0-9])Dry\\s+powder(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Facilitate",
+      "canonical_id": "facilitate",
+      "canonical_term": "Facilitate",
+      "pattern": "(?<![A-Za-z0-9])Facilitate(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Greenlight",
+      "canonical_id": "greenlight",
+      "canonical_term": "Greenlight",
+      "pattern": "(?<![A-Za-z0-9])Greenlight(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "High level",
+      "canonical_id": "high level",
+      "canonical_term": "High level",
+      "pattern": "(?<![A-Za-z0-9])High\\s+level(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Hypothesis",
+      "canonical_id": "hypothesis",
+      "canonical_term": "Hypothesis",
+      "pattern": "(?<![A-Za-z0-9])Hypothesis(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "No worries",
+      "canonical_id": "no worries",
+      "canonical_term": "No worries",
+      "pattern": "(?<![A-Za-z0-9])No\\s+worries(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "North Star",
+      "canonical_id": "north star",
+      "canonical_term": "North Star",
+      "pattern": "(?<![A-Za-z0-9])North\\s+Star(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Onboarding",
+      "canonical_id": "onboarding",
+      "canonical_term": "Onboarding",
+      "pattern": "(?<![A-Za-z0-9])Onboarding(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Pain point",
+      "canonical_id": "pain point",
+      "canonical_term": "Pain point",
+      "pattern": "(?<![A-Za-z0-9])Pain\\s+point(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Synthesize",
+      "canonical_id": "synthesize",
+      "canonical_term": "Synthesize",
+      "pattern": "(?<![A-Za-z0-9])Synthesize(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Tech stack",
+      "canonical_id": "tech stack",
+      "canonical_term": "Tech stack",
+      "pattern": "(?<![A-Za-z0-9])Tech\\s+stack(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Touch base",
+      "canonical_id": "touch base",
+      "canonical_term": "Touch base",
+      "pattern": "(?<![A-Za-z0-9])Touch\\s+base(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Touchpoint",
+      "canonical_id": "touchpoint",
+      "canonical_term": "Touchpoint",
+      "pattern": "(?<![A-Za-z0-9])Touchpoint(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Upskilling",
+      "canonical_id": "upskilling",
+      "canonical_term": "Upskilling",
+      "pattern": "(?<![A-Za-z0-9])Upskilling(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Value prop",
+      "canonical_id": "value prop",
+      "canonical_term": "Value prop",
+      "pattern": "(?<![A-Za-z0-9])Value\\s+prop(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Wheelhouse",
+      "canonical_id": "wheelhouse",
+      "canonical_term": "Wheelhouse",
+      "pattern": "(?<![A-Za-z0-9])Wheelhouse(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 10
+    },
+    {
+      "term": "Add value",
+      "canonical_id": "add value",
+      "canonical_term": "Add value",
+      "pattern": "(?<![A-Za-z0-9])Add\\s+value(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Alignment",
+      "canonical_id": "align",
+      "canonical_term": "Align",
+      "pattern": "(?<![A-Za-z0-9])Alignment(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Apologies",
+      "canonical_id": "apologies",
+      "canonical_term": "Apologies",
+      "pattern": "(?<![A-Za-z0-9])Apologies(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Bandwidth",
+      "canonical_id": "bandwidth",
+      "canonical_term": "Bandwidth",
+      "pattern": "(?<![A-Za-z0-9])Bandwidth(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Benchmark",
+      "canonical_id": "benchmark",
+      "canonical_term": "Benchmark",
+      "pattern": "(?<![A-Za-z0-9])Benchmark(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Blueprint",
+      "canonical_id": "blueprint",
+      "canonical_term": "Blueprint",
+      "pattern": "(?<![A-Za-z0-9])Blueprint(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Burn rate",
+      "canonical_id": "burn rate",
+      "canonical_term": "Burn rate",
+      "pattern": "(?<![A-Za-z0-9])Burn\\s+rate(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Cash flow",
+      "canonical_id": "cash flow",
+      "canonical_term": "Cash flow",
+      "pattern": "(?<![A-Za-z0-9])Cash\\s+flow(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Deep dive",
+      "canonical_id": "deep dive",
+      "canonical_term": "Deep dive",
+      "pattern": "(?<![A-Za-z0-9])Deep\\s+dive(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Fail fast",
+      "canonical_id": "fail fast",
+      "canonical_term": "Fail fast",
+      "pattern": "(?<![A-Za-z0-9])Fail\\s+fast(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Game plan",
+      "canonical_id": "game plan",
+      "canonical_term": "Game plan",
+      "pattern": "(?<![A-Za-z0-9])Game\\s+plan(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Hard copy",
+      "canonical_id": "hard copy",
+      "canonical_term": "Hard copy",
+      "pattern": "(?<![A-Za-z0-9])Hard\\s+copy(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Hard stop",
+      "canonical_id": "hard stop",
+      "canonical_term": "Hard stop",
+      "pattern": "(?<![A-Za-z0-9])Hard\\s+stop(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Headwinds",
+      "canonical_id": "headwinds",
+      "canonical_term": "Headwinds",
+      "pattern": "(?<![A-Za-z0-9])Headwinds(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "In a bind",
+      "canonical_id": "in a bind",
+      "canonical_term": "In a bind",
+      "pattern": "(?<![A-Za-z0-9])In\\s+a\\s+bind(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Level set",
+      "canonical_id": "level set",
+      "canonical_term": "Level set",
+      "pattern": "(?<![A-Za-z0-9])Level\\s+set(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Mind meld",
+      "canonical_id": "mind meld",
+      "canonical_term": "Mind meld",
+      "pattern": "(?<![A-Za-z0-9])Mind\\s+meld(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Pencil in",
+      "canonical_id": "pencil in",
+      "canonical_term": "Pencil in",
+      "pattern": "(?<![A-Za-z0-9])Pencil\\s+in(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Piggyback",
+      "canonical_id": "piggyback",
+      "canonical_term": "Piggyback",
+      "pattern": "(?<![A-Za-z0-9])Piggyback(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Proactive",
+      "canonical_id": "proactive",
+      "canonical_term": "Proactive",
+      "pattern": "(?<![A-Za-z0-9])Proactive(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Push back",
+      "canonical_id": "push back",
+      "canonical_term": "Push back",
+      "pattern": "(?<![A-Za-z0-9])Push\\s+back(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Quick win",
+      "canonical_id": "quick win",
+      "canonical_term": "Quick win",
+      "pattern": "(?<![A-Za-z0-9])Quick\\s+win(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Socialize",
+      "canonical_id": "socialize",
+      "canonical_term": "Socialize",
+      "pattern": "(?<![A-Za-z0-9])Socialize(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Swim lane",
+      "canonical_id": "swim lane",
+      "canonical_term": "Swim lane",
+      "pattern": "(?<![A-Za-z0-9])Swim\\s+lane(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Tailwinds",
+      "canonical_id": "tailwinds",
+      "canonical_term": "Tailwinds",
+      "pattern": "(?<![A-Za-z0-9])Tailwinds(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Value add",
+      "canonical_id": "value add",
+      "canonical_term": "Value add",
+      "pattern": "(?<![A-Za-z0-9])Value\\s+add(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 9
+    },
+    {
+      "term": "Big idea",
+      "canonical_id": "big idea",
+      "canonical_term": "Big idea",
+      "pattern": "(?<![A-Za-z0-9])Big\\s+idea(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Blessing",
+      "canonical_id": "blessing",
+      "canonical_term": "Blessing",
+      "pattern": "(?<![A-Za-z0-9])Blessing(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Champion",
+      "canonical_id": "champion",
+      "canonical_term": "Champion",
+      "pattern": "(?<![A-Za-z0-9])Champion(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Chime in",
+      "canonical_id": "chime in",
+      "canonical_term": "Chime in",
+      "pattern": "(?<![A-Za-z0-9])Chime\\s+in(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Download",
+      "canonical_id": "download",
+      "canonical_term": "Download",
+      "pattern": "(?<![A-Za-z0-9])Download(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Granular",
+      "canonical_id": "granular",
+      "canonical_term": "Granular",
+      "pattern": "(?<![A-Za-z0-9])Granular(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Gut feel",
+      "canonical_id": "gut feel",
+      "canonical_term": "Gut feel",
+      "pattern": "(?<![A-Za-z0-9])Gut\\s+feel(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Has legs",
+      "canonical_id": "has legs",
+      "canonical_term": "Has legs",
+      "pattern": "(?<![A-Za-z0-9])Has\\s+legs(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Ideation",
+      "canonical_id": "ideation",
+      "canonical_term": "Ideation",
+      "pattern": "(?<![A-Za-z0-9])Ideation(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Level up",
+      "canonical_id": "level up",
+      "canonical_term": "Level up",
+      "pattern": "(?<![A-Za-z0-9])Level\\s+up(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Leverage",
+      "canonical_id": "leverage",
+      "canonical_term": "Leverage",
+      "pattern": "(?<![A-Za-z0-9])Leverage(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Material",
+      "canonical_id": "material",
+      "canonical_term": "Material",
+      "pattern": "(?<![A-Za-z0-9])Material(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Moonshot",
+      "canonical_id": "moonshot",
+      "canonical_term": "Moonshot",
+      "pattern": "(?<![A-Za-z0-9])Moonshot(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "On board",
+      "canonical_id": "on board",
+      "canonical_term": "On board",
+      "pattern": "(?<![A-Za-z0-9])On\\s+board(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Optimize",
+      "canonical_id": "optimize",
+      "canonical_term": "Optimize",
+      "pattern": "(?<![A-Za-z0-9])Optimize(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Overhead",
+      "canonical_id": "overhead",
+      "canonical_term": "Overhead",
+      "pattern": "(?<![A-Za-z0-9])Overhead(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Red tape",
+      "canonical_id": "red tape",
+      "canonical_term": "Red tape",
+      "pattern": "(?<![A-Za-z0-9])Red\\s+tape(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Resonate",
+      "canonical_id": "resonate",
+      "canonical_term": "Resonate",
+      "pattern": "(?<![A-Za-z0-9])Resonate(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Scalable",
+      "canonical_id": "scalable",
+      "canonical_term": "Scalable",
+      "pattern": "(?<![A-Za-z0-9])Scalable(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Seamless",
+      "canonical_id": "seamless",
+      "canonical_term": "Seamless",
+      "pattern": "(?<![A-Za-z0-9])Seamless(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Strawman",
+      "canonical_id": "strawman",
+      "canonical_term": "Strawman",
+      "pattern": "(?<![A-Za-z0-9])Strawman(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Traction",
+      "canonical_id": "traction",
+      "canonical_term": "Traction",
+      "pattern": "(?<![A-Za-z0-9])Traction(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Turnover",
+      "canonical_id": "turnover",
+      "canonical_term": "Turnover",
+      "pattern": "(?<![A-Za-z0-9])Turnover(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Workshop",
+      "canonical_id": "workshop",
+      "canonical_term": "Workshop",
+      "pattern": "(?<![A-Za-z0-9])Workshop(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 8
+    },
+    {
+      "term": "Adjourn",
+      "canonical_id": "adjourn",
+      "canonical_term": "Adjourn",
+      "pattern": "(?<![A-Za-z0-9])Adjourn(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Bearish",
+      "canonical_id": "bearish",
+      "canonical_term": "Bearish",
+      "pattern": "(?<![A-Za-z0-9])Bearish(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Bullish",
+      "canonical_id": "bullish",
+      "canonical_term": "Bullish",
+      "pattern": "(?<![A-Za-z0-9])Bullish(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Cadence",
+      "canonical_id": "cadence",
+      "canonical_term": "Cadence",
+      "pattern": "(?<![A-Za-z0-9])Cadence(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Capital",
+      "canonical_id": "capital",
+      "canonical_term": "Capital",
+      "pattern": "(?<![A-Za-z0-9])Capital(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Consult",
+      "canonical_id": "consult",
+      "canonical_term": "Consult",
+      "pattern": "(?<![A-Za-z0-9])Consult(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Context",
+      "canonical_id": "context",
+      "canonical_term": "Context",
+      "pattern": "(?<![A-Za-z0-9])Context(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Disrupt",
+      "canonical_id": "disrupt",
+      "canonical_term": "Disrupt",
+      "pattern": "(?<![A-Za-z0-9])Disrupt(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Empower",
+      "canonical_id": "empower",
+      "canonical_term": "Empower",
+      "pattern": "(?<![A-Za-z0-9])Empower(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Inherit",
+      "canonical_id": "inherit",
+      "canonical_term": "Inherit",
+      "pattern": "(?<![A-Za-z0-9])Inherit(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Iterate",
+      "canonical_id": "iterate",
+      "canonical_term": "Iterate",
+      "pattern": "(?<![A-Za-z0-9])Iterate(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Loop in",
+      "canonical_id": "loop in",
+      "canonical_term": "Loop in",
+      "pattern": "(?<![A-Za-z0-9])Loop\\s+in(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Net-net",
+      "canonical_id": "net net",
+      "canonical_term": "Net-net",
+      "pattern": "(?<![A-Za-z0-9])Net\\-net(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Offline",
+      "canonical_id": "offline",
+      "canonical_term": "Offline",
+      "pattern": "(?<![A-Za-z0-9])Offline(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Park it",
+      "canonical_id": "park it",
+      "canonical_term": "Park it",
+      "pattern": "(?<![A-Za-z0-9])Park\\s+it(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Quarter",
+      "canonical_id": "quarter",
+      "canonical_term": "Quarter",
+      "pattern": "(?<![A-Za-z0-9])Quarter(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Roadmap",
+      "canonical_id": "roadmap",
+      "canonical_term": "Roadmap",
+      "pattern": "(?<![A-Za-z0-9])Roadmap(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Synergy",
+      "canonical_id": "synergy",
+      "canonical_term": "Synergy",
+      "pattern": "(?<![A-Za-z0-9])Synergy(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Utilize",
+      "canonical_id": "utilize",
+      "canonical_term": "Utilize",
+      "pattern": "(?<![A-Za-z0-9])Utilize(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Win-win",
+      "canonical_id": "win win",
+      "canonical_term": "Win-win",
+      "pattern": "(?<![A-Za-z0-9])Win\\-win(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 7
+    },
+    {
+      "term": "Agenda",
+      "canonical_id": "agenda",
+      "canonical_term": "Agenda",
+      "pattern": "(?<![A-Za-z0-9])Agenda(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 6
+    },
+    {
+      "term": "Buy in",
+      "canonical_id": "buy in",
+      "canonical_term": "Buy in",
+      "pattern": "(?<![A-Za-z0-9])Buy\\s+in(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 6
+    },
+    {
+      "term": "Derisk",
+      "canonical_id": "derisk",
+      "canonical_term": "Derisk",
+      "pattern": "(?<![A-Za-z0-9])Derisk(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 6
+    },
+    {
+      "term": "Engage",
+      "canonical_id": "engage",
+      "canonical_term": "Engage",
+      "pattern": "(?<![A-Za-z0-9])Engage(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 6
+    },
+    {
+      "term": "Ideate",
+      "canonical_id": "ideate",
+      "canonical_term": "Ideate",
+      "pattern": "(?<![A-Za-z0-9])Ideate(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 6
+    },
+    {
+      "term": "Metric",
+      "canonical_id": "metric",
+      "canonical_term": "Metric",
+      "pattern": "(?<![A-Za-z0-9])Metric(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 6
+    },
+    {
+      "term": "Optics",
+      "canonical_id": "optics",
+      "canonical_term": "Optics",
+      "pattern": "(?<![A-Za-z0-9])Optics(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 6
+    },
+    {
+      "term": "Runway",
+      "canonical_id": "runway",
+      "canonical_term": "Runway",
+      "pattern": "(?<![A-Za-z0-9])Runway(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 6
+    },
+    {
+      "term": "Unpack",
+      "canonical_id": "unpack",
+      "canonical_term": "Unpack",
+      "pattern": "(?<![A-Za-z0-9])Unpack(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 6
+    },
+    {
+      "term": "Upside",
+      "canonical_id": "upside",
+      "canonical_term": "Upside",
+      "pattern": "(?<![A-Za-z0-9])Upside(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 6
+    },
+    {
+      "term": "80/20",
+      "canonical_id": "80/20",
+      "canonical_term": "80/20",
+      "pattern": "(?<![A-Za-z0-9])80/20(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 5
+    },
+    {
+      "term": "Align",
+      "canonical_id": "align",
+      "canonical_term": "Align",
+      "pattern": "(?<![A-Za-z0-9])Align(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 5
+    },
+    {
+      "term": "Chair",
+      "canonical_id": "chair",
+      "canonical_term": "Chair",
+      "pattern": "(?<![A-Za-z0-9])Chair(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 5
+    },
+    {
+      "term": "Churn",
+      "canonical_id": "churn",
+      "canonical_term": "Churn",
+      "pattern": "(?<![A-Za-z0-9])Churn(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 5
+    },
+    {
+      "term": "Delta",
+      "canonical_id": "delta",
+      "canonical_term": "Delta",
+      "pattern": "(?<![A-Za-z0-9])Delta(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 5
+    },
+    {
+      "term": "HiPPO",
+      "canonical_id": "hippo",
+      "canonical_term": "HiPPO",
+      "pattern": "(?<![A-Za-z0-9])HiPPO(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 5
+    },
+    {
+      "term": "Pivot",
+      "canonical_id": "pivot",
+      "canonical_term": "Pivot",
+      "pattern": "(?<![A-Za-z0-9])Pivot(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 5
+    },
+    {
+      "term": "Scale",
+      "canonical_id": "scale",
+      "canonical_term": "Scale",
+      "pattern": "(?<![A-Za-z0-9])Scale(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 5
+    },
+    {
+      "term": "Scope",
+      "canonical_id": "scope",
+      "canonical_term": "Scope",
+      "pattern": "(?<![A-Za-z0-9])Scope(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 5
+    },
+    {
+      "term": "Table",
+      "canonical_id": "table",
+      "canonical_term": "Table",
+      "pattern": "(?<![A-Za-z0-9])Table(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 5
+    },
+    {
+      "term": "ASAP",
+      "canonical_id": "asap",
+      "canonical_term": "ASAP",
+      "pattern": "(?<![A-Za-z0-9])ASAP(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 4
+    },
+    {
+      "term": "Deck",
+      "canonical_id": "deck",
+      "canonical_term": "Deck",
+      "pattern": "(?<![A-Za-z0-9])Deck(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 4
+    },
+    {
+      "term": "KPIs",
+      "canonical_id": "kpis",
+      "canonical_term": "KPIs",
+      "pattern": "(?<![A-Za-z0-9])KPIs(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 4
+    },
+    {
+      "term": "Ping",
+      "canonical_id": "ping",
+      "canonical_term": "Ping",
+      "pattern": "(?<![A-Za-z0-9])Ping(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 4
+    },
+    {
+      "term": "Punt",
+      "canonical_id": "punt",
+      "canonical_term": "Punt",
+      "pattern": "(?<![A-Za-z0-9])Punt(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 4
+    },
+    {
+      "term": "2.0",
+      "canonical_id": "2.0",
+      "canonical_term": "2.0",
+      "pattern": "(?<![A-Za-z0-9])2\\.0(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "ARR",
+      "canonical_id": "arr",
+      "canonical_term": "ARR",
+      "pattern": "(?<![A-Za-z0-9])ARR(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "B2B",
+      "canonical_id": "b2b",
+      "canonical_term": "B2B",
+      "pattern": "(?<![A-Za-z0-9])B2B(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "B2C",
+      "canonical_id": "b2c",
+      "canonical_term": "B2C",
+      "pattern": "(?<![A-Za-z0-9])B2C(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "COB",
+      "canonical_id": "cob",
+      "canonical_term": "COB",
+      "pattern": "(?<![A-Za-z0-9])COB(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "CTA",
+      "canonical_id": "cta",
+      "canonical_term": "CTA",
+      "pattern": "(?<![A-Za-z0-9])CTA(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "CYA",
+      "canonical_id": "cya",
+      "canonical_term": "CYA",
+      "pattern": "(?<![A-Za-z0-9])CYA(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "EOD",
+      "canonical_id": "eod",
+      "canonical_term": "EOD",
+      "pattern": "(?<![A-Za-z0-9])EOD(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "EOM",
+      "canonical_id": "eom",
+      "canonical_term": "EOM",
+      "pattern": "(?<![A-Za-z0-9])EOM(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "EOW",
+      "canonical_id": "eow",
+      "canonical_term": "EOW",
+      "pattern": "(?<![A-Za-z0-9])EOW(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "ETA",
+      "canonical_id": "eta",
+      "canonical_term": "ETA",
+      "pattern": "(?<![A-Za-z0-9])ETA(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "FYI",
+      "canonical_id": "fyi",
+      "canonical_term": "FYI",
+      "pattern": "(?<![A-Za-z0-9])FYI(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "OOO",
+      "canonical_id": "ooo",
+      "canonical_term": "OOO",
+      "pattern": "(?<![A-Za-z0-9])OOO(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "POC",
+      "canonical_id": "poc",
+      "canonical_term": "POC",
+      "pattern": "(?<![A-Za-z0-9])POC(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "POV",
+      "canonical_id": "pov",
+      "canonical_term": "POV",
+      "pattern": "(?<![A-Za-z0-9])POV(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "RFP",
+      "canonical_id": "rfp",
+      "canonical_term": "RFP",
+      "pattern": "(?<![A-Za-z0-9])RFP(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "ROI",
+      "canonical_id": "roi",
+      "canonical_term": "ROI",
+      "pattern": "(?<![A-Za-z0-9])ROI(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "SOW",
+      "canonical_id": "sow",
+      "canonical_term": "SOW",
+      "pattern": "(?<![A-Za-z0-9])SOW(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "VoC",
+      "canonical_id": "voc",
+      "canonical_term": "VoC",
+      "pattern": "(?<![A-Za-z0-9])VoC(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "YTD",
+      "canonical_id": "ytd",
+      "canonical_term": "YTD",
+      "pattern": "(?<![A-Za-z0-9])YTD(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 3
+    },
+    {
+      "term": "AP",
+      "canonical_id": "ap",
+      "canonical_term": "AP",
+      "pattern": "(?<![A-Za-z0-9])AP(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 2
+    },
+    {
+      "term": "AR",
+      "canonical_id": "ar",
+      "canonical_term": "AR",
+      "pattern": "(?<![A-Za-z0-9])AR(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 2
+    },
+    {
+      "term": "EA",
+      "canonical_id": "ea",
+      "canonical_term": "EA",
+      "pattern": "(?<![A-Za-z0-9])EA(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 2
+    },
+    {
+      "term": "QC",
+      "canonical_id": "qc",
+      "canonical_term": "QC",
+      "pattern": "(?<![A-Za-z0-9])QC(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 2
+    },
+    {
+      "term": "UI",
+      "canonical_id": "ui",
+      "canonical_term": "UI",
+      "pattern": "(?<![A-Za-z0-9])UI(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 2
+    },
+    {
+      "term": "UX",
+      "canonical_id": "ux",
+      "canonical_term": "UX",
+      "pattern": "(?<![A-Za-z0-9])UX(?![A-Za-z0-9])",
+      "pattern_flags": "IGNORECASE",
+      "match_length": 2
+    }
+  ]
+}
