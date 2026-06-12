@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		456BDF152FD7AB5F00F8FAB3 /* OtterKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 456BDF0E2FD7AB5F00F8FAB3 /* OtterKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		456BE2AB2FDB9BA700F8FAB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456BE2822FDB9BA700F8FAB3 /* Assets.xcassets */; };
+		456BE2B52FDB9BA700F8FAB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 456BE2822FDB9BA700F8FAB3 /* Assets.xcassets */; };
+		456BE3082FDBAE1200F8FAB3 /* OtterSharedExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 456BE2FE2FDBAE1200F8FAB3 /* OtterSharedExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -18,6 +21,13 @@
 			remoteGlobalIDString = 456BDF0D2FD7AB5F00F8FAB3;
 			remoteInfo = OtterKeyboard;
 		};
+		456BE3062FDBAE1200F8FAB3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 45B0D9482FD2B7FD00260DC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 456BE2FD2FDBAE1200F8FAB3;
+			remoteInfo = OtterSharedExt;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +37,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
+				456BE3082FDBAE1200F8FAB3 /* OtterSharedExt.appex in Embed Foundation Extensions */,
 				456BDF152FD7AB5F00F8FAB3 /* OtterKeyboard.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -36,6 +47,8 @@
 
 /* Begin PBXFileReference section */
 		456BDF0E2FD7AB5F00F8FAB3 /* OtterKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OtterKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		456BE2822FDB9BA700F8FAB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		456BE2FE2FDBAE1200F8FAB3 /* OtterSharedExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OtterSharedExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		45B0D9502FD2B7FD00260DC5 /* otterTranslate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = otterTranslate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -54,14 +67,12 @@
 				OtterKeyboard/Core/KeyboardViewController.swift,
 				OtterKeyboard/Helper/Layout.swift,
 				OtterKeyboard/Helper/LayoutEnv.swift,
-				OtterSharedExt/Info.plist,
 			);
 			target = 45B0D94F2FD2B7FD00260DC5 /* otterTranslate */;
 		};
 		456BDF212FD7AC7100F8FAB3 /* Exceptions for "otterTranslate" folder in "OtterKeyboard" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Assets.xcassets,
 				OtterApp/Helper/Constants.swift,
 				OtterKeyboard/Core/KeyboardViewController.swift,
 				OtterKeyboard/Helper/Layout.swift,
@@ -72,6 +83,20 @@
 				OtterKeyboard/Services/StyleTransferService.swift,
 			);
 			target = 456BDF0D2FD7AB5F00F8FAB3 /* OtterKeyboard */;
+		};
+		456BE30C2FDBAE1200F8FAB3 /* Exceptions for "OtterSharedExt" folder in "OtterSharedExt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 456BE2FD2FDBAE1200F8FAB3 /* OtterSharedExt */;
+		};
+		456BE3262FDBAFA400F8FAB3 /* Exceptions for "otterTranslate" folder in "OtterSharedExt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				OtterApp/Helper/LayoutEnv.swift,
+			);
+			target = 456BE2FD2FDBAE1200F8FAB3 /* OtterSharedExt */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -84,11 +109,20 @@
 			path = OtterKeyboard;
 			sourceTree = "<group>";
 		};
+		456BE2FF2FDBAE1200F8FAB3 /* OtterSharedExt */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				456BE30C2FDBAE1200F8FAB3 /* Exceptions for "OtterSharedExt" folder in "OtterSharedExt" target */,
+			);
+			path = OtterSharedExt;
+			sourceTree = "<group>";
+		};
 		45B0D9522FD2B7FD00260DC5 /* otterTranslate */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				456BDF202FD7AC7100F8FAB3 /* Exceptions for "otterTranslate" folder in "otterTranslate" target */,
 				456BDF212FD7AC7100F8FAB3 /* Exceptions for "otterTranslate" folder in "OtterKeyboard" target */,
+				456BE3262FDBAFA400F8FAB3 /* Exceptions for "otterTranslate" folder in "OtterSharedExt" target */,
 			);
 			path = otterTranslate;
 			sourceTree = "<group>";
@@ -97,6 +131,13 @@
 
 /* Begin PBXFrameworksBuildPhase section */
 		456BDF0B2FD7AB5F00F8FAB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456BE2FB2FDBAE1200F8FAB3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -116,8 +157,10 @@
 		45B0D9472FD2B7FD00260DC5 = {
 			isa = PBXGroup;
 			children = (
+				456BE2822FDB9BA700F8FAB3 /* Assets.xcassets */,
 				45B0D9522FD2B7FD00260DC5 /* otterTranslate */,
 				456BDF0F2FD7AB5F00F8FAB3 /* OtterKeyboard */,
+				456BE2FF2FDBAE1200F8FAB3 /* OtterSharedExt */,
 				45B0D9512FD2B7FD00260DC5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -127,6 +170,7 @@
 			children = (
 				45B0D9502FD2B7FD00260DC5 /* otterTranslate.app */,
 				456BDF0E2FD7AB5F00F8FAB3 /* OtterKeyboard.appex */,
+				456BE2FE2FDBAE1200F8FAB3 /* OtterSharedExt.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -156,6 +200,28 @@
 			productReference = 456BDF0E2FD7AB5F00F8FAB3 /* OtterKeyboard.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		456BE2FD2FDBAE1200F8FAB3 /* OtterSharedExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 456BE3092FDBAE1200F8FAB3 /* Build configuration list for PBXNativeTarget "OtterSharedExt" */;
+			buildPhases = (
+				456BE2FA2FDBAE1200F8FAB3 /* Sources */,
+				456BE2FB2FDBAE1200F8FAB3 /* Frameworks */,
+				456BE2FC2FDBAE1200F8FAB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				456BE2FF2FDBAE1200F8FAB3 /* OtterSharedExt */,
+			);
+			name = OtterSharedExt;
+			packageProductDependencies = (
+			);
+			productName = OtterSharedExt;
+			productReference = 456BE2FE2FDBAE1200F8FAB3 /* OtterSharedExt.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		45B0D94F2FD2B7FD00260DC5 /* otterTranslate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 45B0D95D2FD2B7FD00260DC5 /* Build configuration list for PBXNativeTarget "otterTranslate" */;
@@ -169,6 +235,7 @@
 			);
 			dependencies = (
 				456BDF142FD7AB5F00F8FAB3 /* PBXTargetDependency */,
+				456BE3072FDBAE1200F8FAB3 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				45B0D9522FD2B7FD00260DC5 /* otterTranslate */,
@@ -193,6 +260,9 @@
 					456BDF0D2FD7AB5F00F8FAB3 = {
 						CreatedOnToolsVersion = 26.5;
 					};
+					456BE2FD2FDBAE1200F8FAB3 = {
+						CreatedOnToolsVersion = 26.5;
+					};
 					45B0D94F2FD2B7FD00260DC5 = {
 						CreatedOnToolsVersion = 26.5;
 					};
@@ -214,12 +284,21 @@
 			targets = (
 				45B0D94F2FD2B7FD00260DC5 /* otterTranslate */,
 				456BDF0D2FD7AB5F00F8FAB3 /* OtterKeyboard */,
+				456BE2FD2FDBAE1200F8FAB3 /* OtterSharedExt */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		456BDF0C2FD7AB5F00F8FAB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				456BE2B52FDB9BA700F8FAB3 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456BE2FC2FDBAE1200F8FAB3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -230,6 +309,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				456BE2AB2FDB9BA700F8FAB3 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +317,13 @@
 
 /* Begin PBXSourcesBuildPhase section */
 		456BDF0A2FD7AB5F00F8FAB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		456BE2FA2FDBAE1200F8FAB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -257,6 +344,11 @@
 			isa = PBXTargetDependency;
 			target = 456BDF0D2FD7AB5F00F8FAB3 /* OtterKeyboard */;
 			targetProxy = 456BDF132FD7AB5F00F8FAB3 /* PBXContainerItemProxy */;
+		};
+		456BE3072FDBAE1200F8FAB3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 456BE2FD2FDBAE1200F8FAB3 /* OtterSharedExt */;
+			targetProxy = 456BE3062FDBAE1200F8FAB3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -313,6 +405,75 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiara.otterTranslate.OtterKeyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		456BE30A2FDBAE1200F8FAB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QW8PFJL6C3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OtterSharedExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OtterSharedExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiara.otterTranslate.OtterSharedExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		456BE30B2FDBAE1200F8FAB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QW8PFJL6C3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OtterSharedExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OtterSharedExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tiara.otterTranslate.OtterSharedExt;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -546,6 +707,15 @@
 			buildConfigurations = (
 				456BDF182FD7AB5F00F8FAB3 /* Debug */,
 				456BDF192FD7AB5F00F8FAB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		456BE3092FDBAE1200F8FAB3 /* Build configuration list for PBXNativeTarget "OtterSharedExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				456BE30A2FDBAE1200F8FAB3 /* Debug */,
+				456BE30B2FDBAE1200F8FAB3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

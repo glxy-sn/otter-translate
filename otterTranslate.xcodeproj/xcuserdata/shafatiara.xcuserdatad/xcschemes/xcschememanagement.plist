@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
+		<key>OtterSharedExt.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>otterTranslate.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>isShown</key>
@@ -19,6 +24,21 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>456BDF0D2FD7AB5F00F8FAB3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>456BE2BE2FDB9F3600F8FAB3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>456BE2FD2FDBAE1200F8FAB3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>45B0D94F2FD2B7FD00260DC5</key>
 		<dict>
 			<key>primary</key>
