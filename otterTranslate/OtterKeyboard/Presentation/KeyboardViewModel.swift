@@ -167,6 +167,25 @@ final class KeyboardViewModel: ObservableObject {
     
     // MARK: - Translate
     
+//    func translate() {
+//        let trimmed = draftText.trimmingCharacters(in: .whitespacesAndNewlines)
+//        
+//        guard !trimmed.isEmpty else {
+//            isOtterPanelOpen = true
+//            onKeyboardHeightChange?(true)
+//            return
+//        }
+//        
+//        isOtterPanelOpen = true
+//        onKeyboardHeightChange?(true)
+//        isTranslating = true
+//        
+//        // TODO: Replace this with your real model / API call.
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) { [weak self] in
+//            self?.translationResult = "Certainly, I'd be happy to set aside time. I'll send a calendar invite shortly."
+//            self?.isTranslating = false
+//        }
+//    }
     func translate() {
         let trimmed = draftText.trimmingCharacters(in: .whitespacesAndNewlines)
         
@@ -179,11 +198,22 @@ final class KeyboardViewModel: ObservableObject {
         isOtterPanelOpen = true
         onKeyboardHeightChange?(true)
         isTranslating = true
+        translationResult = nil
         
-        // TODO: Replace this with your real model / API call.
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.8) { [weak self] in
-            self?.translationResult = "Certainly, I'd be happy to set aside time. I'll send a calendar invite shortly."
-            self?.isTranslating = false
+        Task { [weak self] in
+            do {
+                let result = try await StyleTransferService.shared.translate(trimmed)
+                
+                await MainActor.run {
+                    self?.translationResult = result
+                    self?.isTranslating = false
+                }
+            } catch {
+                await MainActor.run {
+                    self?.translationResult = "Unable to translate. Please check your connection and try again."
+                    self?.isTranslating = false
+                }
+            }
         }
     }
     
