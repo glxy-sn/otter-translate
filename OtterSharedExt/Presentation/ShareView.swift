@@ -195,6 +195,3 @@ struct ShareView: View {
     )
     return ShareView(viewModel: viewModel, onDone: {}, onCancel: {})
 }
-
-
-// notes
